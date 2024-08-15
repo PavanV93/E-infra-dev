@@ -9,11 +9,12 @@ pipeline {
     stages {
         stage('Init') {
             steps {
-                sh "echo this is Build"
-                sh 'env'
+                sh """
+                 ls -ltr
+                """
             }
         }
-        stage('Test') {
+        stage('Plan') {
             steps {
                 sh "echo this is Test"
                 sh 'sleep 10'
