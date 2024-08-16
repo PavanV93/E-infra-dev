@@ -49,6 +49,7 @@ pipeline {
                 """
             }
         }
+        
         stage('Destroy') {
             when {
                 expression{
